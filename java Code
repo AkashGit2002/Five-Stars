@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+  public static void vertically(int i){
+    if(i==5)
+      return;
+    System.out.println("*");
+    vertically(i+1);
+  }
+  public static void horizontally(int i){
+    if(i==5)
+      return;
+    System.out.print("* ");
+    horizontally(i+1);
+  }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+    horizontally(0);
+  	System.out.println();
+    vertically(0);
+   
+	}
+}
